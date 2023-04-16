@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../grid"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501,
+		"liveServer.settings.multiRootWorkspaceName": "potrf_blue_black"
+	}
+}
