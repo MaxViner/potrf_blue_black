@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width='device-width', initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="./assets/styles/style.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
 <div class="container">
 
     <header>
-        <a href=""  class="logo">
+        <a href="#Home"  class="logo">
             Max_Viner
         </a>
         <i class="bx bx-menu" id="menu-icon"></i>
@@ -43,10 +44,12 @@
             </div>
 
               
-            <a href="#" class="btn">Dovnload CV</a>
+            <a
+          href="https://drive.google.com/file/d/1LcmDhXwWEIc8rAM8pR-Faz9VA6fpm_EB/view" target='_blank' rel="noreferrer"
+           class="btn">Open CV</a>
         </div>
         <div class="home-img">
-            <img src="ava.jpg" alt="">
+            <img src="./assets/img/ava.jpg" alt="">
         </div>
     </section>
 
@@ -54,55 +57,136 @@
 
 <section id="About" class="About">
     <div class="About-img">
-        <img src="ava.jpg" alt="">
+        <img src="./assets/img/ava.jpg" alt="">
     </div>
 
     <div class="About-content">
         <h2 class="heading">About <span>Me</span></h2>
-        <h3>Frontend Developer</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, rem maxime. 
-            Nisi officiis aliquam minima asperiores quasi ea ipsa architecto maiores distinctio excepturi autem culpa,
-             sequi temporibus minus harum aspernatur inventore, placeat fugiat 
-            facere? Nisi itaque eaque iure sapiente qui totam corrupti voluptatum magnam ratione fuga?</p>
-    <a href="" class="btn">Read More</a>
+        <h3>Frontend Engineer</h3>
+        <p>In front-end development since 2022, during this time I have worked on frameworks such as React, 
+            Vue, Next. The tools also include Vite, Redux, Tanstak, GraphQL, Zustand, SASS, Git, Vanila Js, 
+            using IT product development, as well as knowledge of the backend database. 
+            I offer my services in the creation and development of large Web applications, as well as solving 
+            private problems in the development of web services.</p>
+        <a href="" class="btn">Read More</a>
         </div>
 </section>
 
 <!-- SERVICE SECTION -->
 <section class="service" id="service">
     <h2 class="heading">
-        Our <span>Services</span>
+        My <span>Skils</span>
     </h2>
     <div class="service-container">
         <div class="service-box">
-
             <i class="bx bx-code-alt"></i>
-            <h3>Web Development</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora delectus vel, 
-                ullam explicabo neque vitae harum corrupti est illo officiis 
-                saepe dolorum magnam deleniti dolor asperiores inventore quod quo necessitatibus.</p>
-                <a href="" class="btn">Read More</a>
+            <h3>Frontend Development</h3>
+            <p>
+                I have practical experience in commercial development of large IT products using React and Next JS. 
+                The toolkit included zustand, react query, redux, react-hook-form and others</p>
+            <ul class="skils-list">
+                <li>
+                    <img src="./assets/img/tecnologies/IconReact.svg" alt="IconReact">
+                    <p>React JS</p>
+                </li>
+                <li>
+                    <img src="./assets/img/tecnologies/IconNextjs.svg" alt="IconNextjs">
+                    <p>Next JS</p>
+                </li>
+                <li>
+                    <img src="./assets/img/tecnologies/vue-js.svg" alt="vue">
+                    <p>Vue JS</p>
+                </li>
+                <li>
+                    <img src="./assets/img/tecnologies/IconJavaScritp.svg" alt="IconJavaScritp">
+                    <p>JavaScritp</p>
+                </li>
+            </ul>
             </div>
             <div class="service-box">
 
                 <i class='bx bx-bar-chart-alt' ></i>
-                <h3>web Marketing</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora delectus vel, 
-                    ullam explicabo neque vitae harum corrupti est illo officiis 
-                    saepe dolorum magnam deleniti dolor asperiores inventore quod quo necessitatibus.</p>
-                    <a href="" class="btn">Read More</a>
+                <h3>Backend developer</h3>
+                <p>As part of my own projects, I developed a backend on NestJS with 
+                    a Postgre SQl database connection.
+                     I have basic skills in creating applications using Graph QL</p>
+                    <ul class="skils-list">
+                        <li>
+                            <img src="./assets/img/tecnologies/IconNodeJs.svg" alt="IconNodeJs">
+                            <p>Node JS</p>
+                        </li>
+                        <li>
+                            <img src="./assets/img/tecnologies/nest.png" alt="nest">
+                            <p>Nest JS</p>
+                        </li>
+                        <li>
+                            <img src="./assets/img/tecnologies/postgresql.svg" alt="vue">
+                            <p>Postgre SQL</p>
+                        </li>
+                        <li>
+                            <img src="./assets/img/tecnologies/IconTypeScript.svg" alt="IconTypeScript">
+                            <p>TypeScript</p>
+                        </li>
+                    </ul>
                 </div>
                 <div class="service-box">
 
                     <i class='bx bx-paint' ></i>
-                    <h3>Graphic designer</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora delectus vel, 
-                        ullam explicabo neque vitae harum corrupti est illo officiis 
-                        saepe dolorum magnam deleniti dolor asperiores inventore quod quo necessitatibus.</p>
-                        <a href="" class="btn">Read More</a>
+                    <h3>Additional tools</h3>
+                    <p>While solving practical problems, I used solutions such as leaflet JS, Vite, 
+                        Moment Js, Git, Github actions, setting up CI/CD, 
+                        writing autotests using the React-testing library, and a number of other popular tools</p>
+                        <ul class="skils-list">
+                            <li>
+                                <img src="./assets/img/tecnologies/IconGit.svg" alt="IconGtiHub">
+                                <p>Git & GitHub</p>
+                            </li>
+                            <li>
+                                <img src="./assets/img/tecnologies/IconRedux.svg" alt="IconGtiHub">
+                                <p>Redux</p>
+                            </li>
+                            <li>
+                                <img src="./assets/img/tecnologies/IconZustand.svg" alt="IconZustand">
+                                <p>Zustand</p>
+                            </li>
+                            <li>
+                                <img src="./assets/img/tecnologies/IconReactQuery.svg" alt="IconReactQuery">
+                                <p>ReactQuery</p>
+                            </li>
+                        </ul>
                     </div>
+                   
+                    
     </div>
-
+    <div class="AdditionalList">
+        <h3>Also...</h3>
+        <ul class="skils-list">
+            <li>
+                <img src="./assets/img/tecnologies/IconAstro.svg" alt="IconAstro">
+            </li>
+            <li>
+                <img src="./assets/img/tecnologies/IconCss.svg" alt="IconCss">
+            </li>
+            <li>
+                <img src="./assets/img/tecnologies/IconGtiHub.svg" alt="IconGtiHub">
+            </li>
+            <li>
+                <img src="./assets/img/tecnologies/IconHtml.svg" alt="IconReactQuery">
+            </li>
+            <li>
+                <img src="./assets/img/tecnologies/IconTailwind.svg" alt="IconTailwind">
+            </li>
+            <li>
+                <img src="./assets/img/tecnologies/leaflet.jpg" alt="leaflet">
+                <li>
+                    <img src="./assets/img/tecnologies/test.png" alt="sass">
+                </li>
+            </li>
+            <li>
+                <img src="./assets/img/tecnologies/sass.jpg" alt="sass">
+            </li>
+        </ul>
+    </div>
 </section>
 
 
@@ -112,102 +196,20 @@
         Latest <span>Projects</span>
     </h2>
     <div class="portfolio-container">
-        <div class="portfolio-box">
 
-            <img src="portf.jpg" alt="">
-            <div class="portfolio-layer">
-                <h4>Web Design</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                     Ducimus, unde dolorum eaque eveniet necessitatibus sequi itaque sed! Praesentium tempore blanditiis, 
-                    nostrum quas, nemo minus delectus repellendus nesciunt accusamus impedit repellat.</p>
-                    <a href=""><i class='bx bx-link-external'></i></a>
-            </div>
-        </div>
-       
-    
-    <div class="portfolio-box">
-        <img src="folio/MaxViner_cyberpunk_fox_79d70bc0-ad30-4356-8a1c-f087d96e14cc-1.png" alt="">
-        <div class="portfolio-layer">
-            <h4>Web Design</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                 Ducimus, unde dolorum eaque eveniet necessitatibus sequi itaque sed! Praesentium tempore blanditiis, 
-                nostrum quas, nemo minus delectus repellendus nesciunt accusamus impedit repellat.</p>
-                <a href=""><i class='bx bx-link-external'></i></a>
-        
-    </div>
-    </div>
-    <div class="portfolio-box">
-        <img src="folio/MaxViner_cyberpunk_wolf_0f53a62a-c10d-4129-b100-05c059323812.png" alt="">
-        <div class="portfolio-layer">
-            <h4>Web Design</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                 Ducimus, unde dolorum eaque eveniet necessitatibus sequi itaque sed! Praesentium tempore blanditiis, 
-                nostrum quas, nemo minus delectus repellendus nesciunt accusamus impedit repellat.</p>
-                <a href=""><i class='bx bx-link-external'></i></a>
-        </div>
-        
-    </div>
-    <div class="portfolio-box">
-        <img src="folio/MaxViner_cyberpunk_wolf_logotip_cb75d188-90bc-46f5-907b-1eb0b93eab8f.png" alt="">
-        <div class="portfolio-layer">
-            <h4>Web Design</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                 Ducimus, unde dolorum eaque eveniet necessitatibus sequi itaque sed! Praesentium tempore blanditiis, 
-                nostrum quas, nemo minus delectus repellendus nesciunt accusamus impedit repellat.</p>
-                <a href=""><i class='bx bx-link-external'></i></a>
-        </div>
-        
-    </div>
-    <div class="portfolio-box">
-        <img src="folio/MaxViner_cyberpunk_wolf_operator_programmer_dark_mode_logo_6c7a9bb7-b0af-459c-8ad1-ce161248a275.png" alt="">
-        <div class="portfolio-layer">
-            <h4>Web Design</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                 Ducimus, unde dolorum eaque eveniet necessitatibus sequi itaque sed! Praesentium tempore blanditiis, 
-                nostrum quas, nemo minus delectus repellendus nesciunt accusamus impedit repellat.</p>
-                <a href=""><i class='bx bx-link-external'></i></a>
-        </div>
-       
-    </div>
-    <div class="portfolio-box">
-        <img src="folio/MaxViner_wolf_cyber_operator_585d66a0-61ac-47a6-a654-5292b38527c5.png" alt="">
-        <div class="portfolio-layer">
-            <h4>Web Design</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                 Ducimus, unde dolorum eaque eveniet necessitatibus sequi itaque sed! Praesentium tempore blanditiis, 
-                nostrum quas, nemo minus delectus repellendus nesciunt accusamus impedit repellat.</p>
-                <a href=""><i class='bx bx-link-external'></i></a>
-        </div>
-        
-    </div>
 </div>
     
-
 </section>
 
 
 <section class="Contact" id="Contact">
 
-
-    <h2 class="heading">My <span> Contact</span></h2>
-    <form action="#">
-        <div class="input-box">
-            <input type="text" placeholder="Full Name">
-            <input type="email" placeholder="Email Address">
-        </div>
-        <div class="input-box">
-            <input type="number" placeholder="Mobile number">
-            <input type="text" placeholder="Email subject">
-        </div>
-        <textarea name="" id="" cols="30" rows="10" placeholder="Yoyr message"></textarea>
-        <input type="submit" value="Send Message" class="btn">
-    </form>
 </section>
 
 
 <footer>
     <div class="footer-text">
-        <p>Max_Viner 2023</p>
+        <p>Max_Viner 2024</p>
 
     </div>
     <div class="footer-iconTop">
@@ -218,7 +220,8 @@
 </div>
 <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
 <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="script.js"></script>
-   
+    <script defer src="./scripts/main.js"></script>
+   <script defer src="./scripts/generateProjectCards.js"></script>
+   <script defer src="./scripts/generateContactForm.js"></script>
 </body>
 </html>
