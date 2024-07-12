@@ -7,7 +7,6 @@
     border: none;
     scroll-behavior: smooth;
     font-family: "sans-serif";
-
 }
 
 :root{
@@ -26,7 +25,9 @@ html{
 .container{
     display: flex;
     flex-direction: column;
-    width: 95%;
+    margin: auto;
+    width: 100%;
+    overflow: hidden;
 }
 body{
     margin: 0 auto;
@@ -150,8 +151,7 @@ header  .sticky{
 .social-media a:hover{
     background-color: var(--main-color);
     color: var(--second-bg-color);
-    border-color: var(--acceint-color);
-    box-shadow: 0 0 1 rem var(--main-color);
+    box-shadow: 0 0 3rem var(--main-color);
 }
 
 .home-content H3:nth-of-type(2){
@@ -185,12 +185,17 @@ span{
     align-items: center;
     gap: 2rem;
     background: var(--bg-color);
+    width: 100%;
 }
-
-.About-img img{
+.About_img {
+    width: 360px;
+    height: 360px;
+}
+.About_img img{
     margin-right: 10rem;
-    width: 75%;
-    height: auto;
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
     border-radius: 50%;
 }
 .heading{
@@ -471,6 +476,7 @@ footer{
     flex-direction: column;
     gap: 1.2rem;
     gap: 10px;
+    width: 100%;
 }
 
 .contact__option{
@@ -491,7 +497,6 @@ footer{
 
 .contact__option:hover{
     background: transparent;
-    border-color: var(--acceint-color);
     box-shadow: 2px 2px 30px var(--main-color);
 }
 
@@ -577,13 +582,26 @@ select:-moz-autofill {
         grid-template-columns:  1fr;
         gap: 2rem;
     }
+
+.contact__option{
+    width: 600px;
+    height: 200px;
+   font-size: 2rem;
+
 }
+}
+
 
 @media screen  and (max-width:600px){
     .portfolio__container{
         width: var(--container-width-sm);
     }
-   
+    .contact__option{
+        width: 100%;
+    }
+    .portfolio-box{
+        height: 240px;  
+    }
 }
 
 
@@ -657,10 +675,24 @@ select:-moz-autofill {
 
    .About{
     flex-direction: column-reverse;
+    width: 100%;
+    position: relative;
    }
-   .About-img img{
-    width: 60%;
+   .About_img{
+    position:absolute;
+    top: 20px;
+    left: 0px;
+    width: 100%;    height:  auto;
     margin-top: 4rem;
+    overflow: hidden;
+   }
+   .About_img >img{
+    width: 100%;
+    border-radius: 20%;
+    height:  auto;
+    opacity: 0.2;
+    z-index: -1;
+
    }
    .services h2{
     margin-bottom: 3rem;
@@ -672,10 +704,7 @@ select:-moz-autofill {
    .portfolio{
     padding-bottom:7rem ;
    }
-   .portfolio-container{
-    grid-template-columns: repeat(2, 1fr);
-
-   }
+   
 }
 
 

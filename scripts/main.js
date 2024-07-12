@@ -68,7 +68,6 @@ ScrollReveal().reveal(".home-content p, .About-content", {origin:'right'})
 const typed=new Typed(".multiple-text", {
     strings:[
         'Frontend Engeneer',
-        'Fulstack Developer',
         'Web Developer'
     ],
     typeSpeed:100,
